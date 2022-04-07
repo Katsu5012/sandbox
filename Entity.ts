@@ -43,8 +43,8 @@ class Persons extends Entity<Persons, params> {
   /**
    * Constructor
    */
-  constructor(params: params) {
-    super(params);
+  constructor(params: Partial<params>) {
+    P
   }
 
   /**

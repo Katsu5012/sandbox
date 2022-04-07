@@ -8,7 +8,7 @@ class Author {
   }
 }
 
-class Readonly<Post> {
+class Post {
   readonly id: number;
   readonly title: number;
   readonly body: string;

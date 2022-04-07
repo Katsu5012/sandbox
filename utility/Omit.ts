@@ -5,12 +5,12 @@ interface Todo {
   createdAt: number;
 }
 
-type TodoPreview2 = Omit<Todo, "description">;
+type TodoPreview2 = Omit<Todo, keyof Todo>;
 
 const todo22: TodoPreview2 = {
-  title: "Clean room",
-  completed: false,
-  createdAt: 1615544252770,
+//   title: "Clean room",
+//   completed: false,
+//   createdAt: 1615544252770,
 };
 
 todo22;
