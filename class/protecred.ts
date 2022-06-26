@@ -51,12 +51,12 @@ class Derived2 extends Base {
   }
 
   // f2を書き換えたものmethodを解して行う ValueObjectの不変性のルールに反するのでNGな気がする。。。 多分業務でこんなことが起きないのでこの例は無視で良いかと思います。
-  setValue(value: number) {
+  set Value(value: number) {
     this.x = value;
   }
 }
 
 const de2 = new Derived2();
 console.log(de2.Value);
-de2.setValue(100);
+// de2.Value(100);
 console.log(de2.Value);
